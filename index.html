@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viweport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Login</title>
 </head>
 <body>
     <main>
         <div>
+            <img src="imagens/build.webp" alt="predior">
+        </div>
+        <div>
             <h1>Login</h1>
-            <p>Insira login e senha para prosseguir</p>
+            <p>Seja bem-vindo(a) novamente, Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
             <form action="login.php" method="post">
-                <p><input type="email" autocomplete="email" placeholder="seu_email@gmail.com"></p>
-                <p><input type="text" autocomplete="nome" placeholder="seu nome"></p>
+                <span class="material-symbols-outlined">person</span> <input type="email" autocomplete="email" placeholder="seu_email@gmail.com"><br>
+                <span class="material-symbols-outlined">key</span><input type="text" autocomplete="nome" placeholder="seu nome">
+                <p id="enter"><input type="button" value="Entrar"></p>
+                <p id="email"><input type="button" value="Esqueci minha senha"> <span class="material-symbols-outlined" id="imail">mail</span></p>
             </form>
         </div>
     </main>
